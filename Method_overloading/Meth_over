@@ -1,0 +1,47 @@
+class Meth{
+
+    double length, width, height;
+
+    void vol(){
+
+        System.out.print("Volume = ");
+        System.out.println(length * width * height);
+    }
+
+    void vol(double value){
+
+        length = value;
+        width = value;
+        height = value;
+
+        System.out.print("Volume = ");
+        System.out.println(length * width * height);
+    }
+
+    void vol(double value1, value2, value3){
+
+        length = value1; 
+        width = value2;
+        height = value3;
+
+        System.out.print("Volume = ");
+        System.out.println(length * width * height);
+    }
+}
+
+class Meth_over{
+
+    public static void main (String []args){
+
+        Meth myMeth = new Meth();
+
+        myMeth.length = 10;
+        myMeth.width = 20;
+        myMeth.height = 30;
+
+        myMeth.vol();
+        myMeth.vol(10);
+        myMeth.vol(40,50,60);
+    }
+
+}
